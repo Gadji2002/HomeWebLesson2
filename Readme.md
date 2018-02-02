@@ -1,4 +1,4 @@
-##ДЗ
+## ДЗ №2
 
 ### Подготовка
 Форкаем как и на прошлом занятии.
@@ -58,7 +58,7 @@ _400 Bad request. The browser (or proxy) sent a request that this server could n
 _name = request.form["name"]_ если в форме вдруг не окажется input c name=name то получите такую ошибку.
 Чтоб избежать подобного надо использовать такую форму
 _name = request.form.get('name', 'default_name')_ - получаем данные через метод get. Второй параметр
-_default_name_ 
+_default_name_  это значение которое вернется, если в форме не будет ничего по ключу 'name'.
 
 ### 2. Подключаем БД 
 
