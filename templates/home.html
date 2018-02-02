@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-<form method="post">
-    <input type="text" name="name" placeholder="Имя">
-    <br>
-    <br>
-    <input type="number" name="year" placeholder="Возраст">
-    <br>
-    <br>
-    <label> Мужчина?
-        <input type="checkbox" name="male" >
-    </label>
-    <br>
-    <br>
-    <input type="submit">
-</form>
+{% block title %} Home {% endblock %}
 
-</body>
-</html>
+
+{% block content %}
+
+
+    <h2>Отправьте POST запрос и потом зайдите в Person</h2>
+
+
+{% endblock %}
+
+
+
+
