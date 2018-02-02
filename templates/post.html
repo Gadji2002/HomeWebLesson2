@@ -1,10 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+
+
+{% block title %} POST {% endblock %}
+
+
+{% block content %}
+
+
+<form method="post">
+    <br>
+    <input type="text" name="name" placeholder="Имя">
+    <br>
+    <br>
+    <input type="number" name="year" placeholder="Возраст">
+    <br>
+    <br>
+    <label> Мужчина?
+        <input type="checkbox" name="male" >
+    </label>
+    <br>
+    <br>
+    <input type="submit">
+</form>
+
+
+{% endblock %}
